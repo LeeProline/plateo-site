@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join the PlateO beta</title>
+  <meta name="description" content="Ask to join the closed, invite-only PlateO beta for iPhone.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0B0C0E" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F3F6F7" media="(prefers-color-scheme: light)">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PlateO">
+  <meta property="og:title" content="Join the PlateO beta">
+  <meta property="og:description" content="A closed, invite-only beta of PlateO for iPhone. Leave your details to be invited.">
+  <meta property="og:url" content="https://plateo.fit/beta.html">
+  <meta property="og:image" content="https://plateo.fit/img/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PlateO wordmark, the words Train what's ready, and the PlateO Today screen on an iPhone.">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="beta.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="./" aria-label="PlateO home"><span aria-hidden="true">Plate</span><svg viewBox="10 10 108 108" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M10.00,64 a54.00,54.00 0 1 0 108.00,0 a54.00,54.00 0 1 0 -108.00,0 M18.64,64 a45.36,45.36 0 1 0 90.72,0 a45.36,45.36 0 1 0 -90.72,0 M20.51,64 a43.49,43.49 0 1 0 86.98,0 a43.49,43.49 0 1 0 -86.98,0 M39.85,64 a24.15,24.15 0 1 0 48.30,0 a24.15,24.15 0 1 0 -48.30,0 M41.16,64 a22.84,22.84 0 1 0 45.68,0 a22.84,22.84 0 1 0 -45.68,0 M49.96,64 a14.04,14.04 0 1 0 28.08,0 a14.04,14.04 0 1 0 -28.08,0"/></svg></a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap form-wrap">
+    <p class="pill">Closed beta · iPhone</p>
+    <h1>Join the PlateO beta</h1>
+    <p class="lead">PlateO is in a small, invite-only beta on iPhone through Apple's TestFlight. Leave your details and I'll email you when there's a place.</p>
+
+    <div class="card" id="signup-card">
+      <form id="signup" novalidate hidden>
+        <p class="hint">Fields marked optional can be left blank.</p>
+
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required maxlength="80" autocomplete="name" aria-describedby="name-error">
+          <span class="error" id="name-error"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required maxlength="254" autocomplete="email" inputmode="email" spellcheck="false" aria-describedby="email-error">
+          <span class="error" id="email-error"></span>
+        </div>
+
+        <div class="field">
+          <label for="iphone">Which iPhone do you have? <span class="opt">(optional)</span></label>
+          <select id="iphone" name="iphone">
+            <option value="">Choose one</option>
+            <option value="iphone-17">iPhone 17 series</option>
+            <option value="iphone-16">iPhone 16 series</option>
+            <option value="iphone-15">iPhone 15 series</option>
+            <option value="older">Older</option>
+            <option value="not-sure">Not sure</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="training">What do you mainly train? <span class="opt">(optional)</span></label>
+          <select id="training" name="training">
+            <option value="">Choose one</option>
+            <option value="gym-weights">Gym weights</option>
+            <option value="crossfit-style">CrossFit-style</option>
+            <option value="hyrox">HYROX</option>
+            <option value="home">Home workouts</option>
+            <option value="mixed">Mixed</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="note">Anything you'd like it to do? <span class="opt">(optional)</span></label>
+          <span class="hint" id="note-hint">Up to 500 characters.</span>
+          <textarea id="note" name="note" maxlength="500" rows="4" aria-describedby="note-hint note-error"></textarea>
+          <span class="count" id="note-count" aria-hidden="true">0 / 500</span>
+          <span class="error" id="note-error"></span>
+        </div>
+
+        <div class="field hp" aria-hidden="true">
+          <label for="website">Leave this empty</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="field">
+          <div class="check">
+            <input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error">
+            <label for="consent">I'm happy for PlateO to email me about the beta (see the <a href="privacy.html#beta-signup">privacy policy</a>).</label>
+          </div>
+          <span class="error" id="consent-error"></span>
+        </div>
+
+        <button class="btn" type="submit" id="submit">Ask to join</button>
+        <div class="status" id="status" role="status" aria-live="polite"></div>
+      </form>
+
+      <div class="success" id="success" hidden>
+        <svg class="success-mark" viewBox="10 10 108 108" width="52" height="52" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M10.00,64 a54.00,54.00 0 1 0 108.00,0 a54.00,54.00 0 1 0 -108.00,0 M18.64,64 a45.36,45.36 0 1 0 90.72,0 a45.36,45.36 0 1 0 -90.72,0 M20.51,64 a43.49,43.49 0 1 0 86.98,0 a43.49,43.49 0 1 0 -86.98,0 M39.85,64 a24.15,24.15 0 1 0 48.30,0 a24.15,24.15 0 1 0 -48.30,0 M41.16,64 a22.84,22.84 0 1 0 45.68,0 a22.84,22.84 0 1 0 -45.68,0 M49.96,64 a14.04,14.04 0 1 0 28.08,0 a14.04,14.04 0 1 0 -28.08,0"/></svg>
+        <h2 tabindex="-1" id="success-title">Thanks, you're on the list.</h2>
+        <p>I'll email you when there's a place.</p>
+        <p><a href="./">Back to PlateO</a></p>
+      </div>
+
+      <noscript>
+        <div class="noscript">
+          <p><strong>This form needs JavaScript.</strong> You can still ask to join by email: <a href="mailto:hello@plateo.fit?subject=PlateO%20beta">hello@plateo.fit</a>. Tell me your name and, if you like, which iPhone you have and what you train.</p>
+        </div>
+      </noscript>
+    </div>
+
+    <p class="alt">Prefer email? Write to <a href="mailto:hello@plateo.fit?subject=PlateO%20beta">hello@plateo.fit</a>. Invites go out in small batches, so it may take a while.</p>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <a class="brand brand-sm" href="./" aria-label="PlateO home"><span aria-hidden="true">Plate</span><svg viewBox="10 10 108 108" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M10.00,64 a54.00,54.00 0 1 0 108.00,0 a54.00,54.00 0 1 0 -108.00,0 M18.64,64 a45.36,45.36 0 1 0 90.72,0 a45.36,45.36 0 1 0 -90.72,0 M20.51,64 a43.49,43.49 0 1 0 86.98,0 a43.49,43.49 0 1 0 -86.98,0 M39.85,64 a24.15,24.15 0 1 0 48.30,0 a24.15,24.15 0 1 0 -48.30,0 M41.16,64 a22.84,22.84 0 1 0 45.68,0 a22.84,22.84 0 1 0 -45.68,0 M49.96,64 a14.04,14.04 0 1 0 28.08,0 a14.04,14.04 0 1 0 -28.08,0"/></svg></a>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="mailto:hello@plateo.fit">hello@plateo.fit</a></li>
+        </ul>
+      </nav>
+      <p class="copy">© 2026 Lee Praoline. Made in the UK.</p>
+    </div>
+  </footer>
+</body>
+</html>

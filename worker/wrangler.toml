@@ -1,0 +1,36 @@
+# PlateO beta sign-up Worker. Not deployed yet: see README.md in this folder.
+name = "plateo-beta-signup"
+main = "index.js"
+compatibility_date = "2026-06-01"
+
+# Keep the workers.dev URL on for testing before the domain is live.
+# Switch to false once the route below is working.
+workers_dev = true
+
+# TODO (once plateo.fit is on Cloudflare): serve the Worker at beta.plateo.fit/signup.
+# Also add a proxied DNS record for beta.plateo.fit (AAAA 100:: is fine), or use a Custom Domain instead.
+# routes = [
+#   { pattern = "beta.plateo.fit/signup*", zone_name = "plateo.fit" }
+# ]
+
+# Storage for sign-ups (180 days) and the hashed-IP rate limit counters (2 hours).
+# Replace the id with the one printed by: npx wrangler kv namespace create SIGNUPS_KV
+[[kv_namespaces]]
+binding = "SIGNUPS_KV"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+# Email Routing "send email" binding. It can only send to this one verified destination.
+# Must be the same address as OWNER_EMAIL below, and verified in Email Routing first.
+[[send_email]]
+name = "SEND_EMAIL"
+destination_address = "REPLACE_WITH_VERIFIED_DESTINATION_ADDRESS"
+
+[vars]
+OWNER_EMAIL = "REPLACE_WITH_VERIFIED_DESTINATION_ADDRESS"
+FROM_EMAIL = "beta@plateo.fit"
+
+# Secret, not a var (set it with: npx wrangler secret put IP_SALT):
+#   IP_SALT  a long random string mixed into the daily IP hash used for rate limiting
+
+[observability]
+enabled = false

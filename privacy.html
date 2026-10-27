@@ -5,10 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PlateO privacy policy</title>
   <meta name="description" content="How PlateO and this website handle your data during the beta, in plain English.">
-  <meta name="theme-color" content="#0A0B0C">
-  <meta name="color-scheme" content="dark">
-  <meta name="referrer" content="no-referrer">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0B0C0E" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F3F6F7" media="(prefers-color-scheme: light)">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PlateO">
+  <meta property="og:title" content="PlateO privacy policy">
+  <meta property="og:description" content="How PlateO and this website handle your data during the beta, in plain English.">
+  <meta property="og:url" content="https://plateo.fit/privacy.html">
+  <meta property="og:image" content="https://plateo.fit/img/og-card.jpg">
+  <meta property="og:locale" content="en_GB">
+  <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +25,8 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-head">
     <div class="wrap">
-      <a class="brand" href="./" aria-label="PlateO home"><img src="img/icon-192.png" alt="" width="34" height="34">PlateO</a>
+      <a class="brand" href="./" aria-label="PlateO home"><span aria-hidden="true">Plate</span><svg viewBox="10 10 108 108" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M10.00,64 a54.00,54.00 0 1 0 108.00,0 a54.00,54.00 0 1 0 -108.00,0 M18.64,64 a45.36,45.36 0 1 0 90.72,0 a45.36,45.36 0 1 0 -90.72,0 M20.51,64 a43.49,43.49 0 1 0 86.98,0 a43.49,43.49 0 1 0 -86.98,0 M39.85,64 a24.15,24.15 0 1 0 48.30,0 a24.15,24.15 0 1 0 -48.30,0 M41.16,64 a22.84,22.84 0 1 0 45.68,0 a22.84,22.84 0 1 0 -45.68,0 M49.96,64 a14.04,14.04 0 1 0 28.08,0 a14.04,14.04 0 1 0 -28.08,0"/></svg></a>
+      <a class="btn btn-sm" href="beta.html">Join the beta</a>
     </div>
   </header>
 
@@ -82,28 +92,48 @@
     <h2 id="website">This website</h2>
     <ul>
       <li>No cookies, no analytics, no tracking pixels, no third-party scripts or fonts. So there's no cookie banner.</li>
-      <li>Like every website, the hosting provider (GitHub Pages) briefly keeps standard server logs, such as your IP address and browser type, to deliver the page and stop abuse. We don't use them to identify or profile you.</li>
+      <li>This website is hosted on Cloudflare. Like every website host, Cloudflare briefly keeps standard server logs, such as your IP address and browser type, to deliver the page and stop abuse. We don't use them to identify or profile you.</li>
+      <li>The fonts are stored on this website, so loading a page does not contact Google Fonts or anyone else.</li>
     </ul>
 
-        <h2 id="rights">Your rights</h2>
-    <p>Under UK data protection law you can ask to see, correct or delete what we hold about you, ask for a copy you can move elsewhere, or object to how we use it. Much of this you can do yourself in the app (see above). For the rest, email us and we'll reply within one month. For the account, we rely on needing your details to run the service you signed up to; for backup and health information, we rely on your separate agreement, which you can withdraw at any time.</p>
+    <h2 id="beta-signup">Beta sign-up (this website)</h2>
+    <ul>
+      <li><strong>What we collect.</strong> If you fill in the <a href="beta.html">beta sign-up form</a>: your name, your email address, and, if you choose to tell us, which iPhone you have, what you mainly train and a short note. We also keep a record that you ticked the box agreeing to be emailed about the beta, and when.</li>
+      <li><strong>Why.</strong> To invite you to the closed PlateO beta on TestFlight, and to email you about the beta. Nothing else: no newsletters, no marketing, and it is never sold or shared.</li>
+      <li><strong>Lawful basis.</strong> Your consent (UK GDPR Article 6(1)(a)). You can withdraw it at any time.</li>
+      <li><strong>Where it goes.</strong> The form sends your details to a small program (a Cloudflare Worker) that sits in front of this website. It saves them in Cloudflare's storage, so nothing is lost if an email fails, and emails a copy to the owner's mailbox. Cloudflare handles this on our behalf and under our instructions. Cloudflare runs a global network, so your details may be handled outside the UK, under Cloudflare's data protection terms.</li>
+      <li><strong>Stopping misuse.</strong> To limit repeat sign-ups, the Worker keeps a scrambled (hashed) form of your IP address, which changes every day, for up to an hour. Your IP address itself is not stored with your sign-up.</li>
+      <li><strong>How long we keep it.</strong> Up to 180 days, then it is deleted, from Cloudflare storage automatically and from the owner's mailbox by hand. If you join the beta, Apple's TestFlight then handles your invitation under Apple's own policies. We delete your sign-up sooner if you ask.</li>
+      <li><strong>Your rights and withdrawing.</strong> To withdraw your consent, or to see, correct or delete your sign-up, email <a href="mailto:hello@plateo.fit">hello@plateo.fit</a>. Withdrawing does not affect anything we did with your consent before you withdrew it.</li>
+    </ul>
+
+    <h2 id="rights">Your rights</h2>
+    <p>Under UK data protection law you can ask to see, correct or delete what we hold about you, ask for a copy you can move elsewhere, or object to how we use it. Much of this you can do yourself in the app (see above). For the rest, email us and we'll reply within one month. For the account, we rely on needing your details to run the service you signed up to; for backup and health information, and for beta sign-ups on this website, we rely on your separate agreement (consent), which you can withdraw at any time.</p>
     <p>If you're unhappy with how we've handled your data, you can complain to the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk/make-a-complaint/">ico.org.uk/make-a-complaint</a>, though we'd appreciate the chance to put it right first.</p>
 
     <h2 id="contact">Who we are</h2>
     <div class="box">
       <p>PlateO is made by Lee Praoline, an individual in the UK, who is the data controller for the app and this website.</p>
-      <p>Contact: <a href="mailto:lpraoline@gmail.com">lpraoline@gmail.com</a></p>
+      <p>Contact: <a href="mailto:hello@plateo.fit">hello@plateo.fit</a></p>
     </div>
 
     <h2 id="changes">Changes</h2>
     <p>If PlateO changes what it collects, for example when friends, leagues or other sign-in methods are switched on, this policy will change before they go live, and the date above will be updated.</p>
 
-    <p><a href="./">← Back to PlateO</a></p>
+    <p class="back"><a href="./">← Back to PlateO</a></p>
   </main>
 
   <footer class="site-foot">
     <div class="wrap">
-      <p>© 2026 Lee Praoline. Made in the UK.</p>
+      <a class="brand brand-sm" href="./" aria-label="PlateO home"><span aria-hidden="true">Plate</span><svg viewBox="10 10 108 108" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M10.00,64 a54.00,54.00 0 1 0 108.00,0 a54.00,54.00 0 1 0 -108.00,0 M18.64,64 a45.36,45.36 0 1 0 90.72,0 a45.36,45.36 0 1 0 -90.72,0 M20.51,64 a43.49,43.49 0 1 0 86.98,0 a43.49,43.49 0 1 0 -86.98,0 M39.85,64 a24.15,24.15 0 1 0 48.30,0 a24.15,24.15 0 1 0 -48.30,0 M41.16,64 a22.84,22.84 0 1 0 45.68,0 a22.84,22.84 0 1 0 -45.68,0 M49.96,64 a14.04,14.04 0 1 0 28.08,0 a14.04,14.04 0 1 0 -28.08,0"/></svg></a>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="mailto:hello@plateo.fit">hello@plateo.fit</a></li>
+        </ul>
+      </nav>
+      <p class="copy">© 2026 Lee Praoline. Made in the UK.</p>
     </div>
   </footer>
 </body>
