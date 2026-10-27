@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "plateo-site",
+  "compatibility_date": "2026-10-23",
+  "observability": { "enabled": true },
+  // Static site: ./dist is built by build.sh from the site files (no worker/, no notes).
+  "assets": { "directory": "./dist", "not_found_handling": "404-page" },
+  "routes": [
+    { "pattern": "plateo.fit", "custom_domain": true },
+    { "pattern": "www.plateo.fit", "custom_domain": true }
+  ]
+}
