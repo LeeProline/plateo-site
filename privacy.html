@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PlateO privacy policy</title>
+  <meta name="description" content="How PlateO and this website handle your data during the beta, in plain English.">
+  <meta name="theme-color" content="#0A0B0C">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="no-referrer">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="./" aria-label="PlateO home"><img src="img/icon-192.png" alt="" width="34" height="34">PlateO</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap doc">
+    <h1>PlateO beta privacy policy</h1>
+    <p class="meta">Last updated: 27 October 2026 · Effective from: 27 October 2026 · Version: beta (0.9)</p>
+
+    <p>PlateO is a gym app for your iPhone. This page explains, in plain English, what happens to your data in the PlateO app during the beta, and on this website.</p>
+
+    <div class="box">
+      <p><strong>The short version.</strong> You sign in to use PlateO, with Apple for now. Your workouts live on your iPhone. They are copied to our server in London only if you say yes to a separate backup question. Apple Health data and voice audio never leave your iPhone. There are no ads, no analytics and no tracking. You can delete your account and everything on our server from inside the app.</p>
+    </div>
+
+    <h2 id="collect">What PlateO collects, and when</h2>
+    <ul>
+      <li><strong>Your account.</strong> Sign-in is required in the beta. At the moment the only way in is Sign in with Apple (email codes and Google are switched off for now). PlateO asks Apple for your email address only, not your name. Apple may give us a private relay address instead of your real one. We also hold a random account number made for you. This is stored by our sign-in service when you sign in, whether or not you turn backup on.</li>
+      <li><strong>Your year of birth.</strong> Before you can sign in, PlateO asks for your year of birth (not your full date of birth), to check you are 13 or older. See <a href="#children">Children</a>. The year is kept on your iPhone. It only goes to our server as part of backup, and only if you leave profile backup on (see below).</li>
+      <li><strong>Your training, on your iPhone.</strong> Workouts, sets, notes, body weight, settings and what you said (as text) are stored on your iPhone.</li>
+      <li><strong>Backup to our server (your choice).</strong> After you sign in, PlateO asks a separate question: back up your training? It is never ticked for you, and you can answer "Not now, keep it on my phone". If you agree, PlateO copies to our server: your workouts, sets and exercises, exercise notes, conditioning results, cardio pieces and custom workouts you saved, custom exercises you made, your settings and your consent record, and body weight you log. Height, year of birth and sex go too, only if you have added them and have not switched on "Keep my profile on this phone only". Body weight, height and sex are health information, so they also need your separate agreement to PlateO keeping health information. If you withdraw it, they are erased from the server.</li>
+      <li><strong>Bug reports (your choice).</strong> If you tap Send report on the feedback button (the ladybug), PlateO sends what you typed or said as text and whatever you left ticked: the screen you were on, app and iOS version, iPhone model, a trail of recent taps and screens, and a screenshot. You can add a name (optional). The report also carries a random number made for this install, which is not a device ID, so repeat sends can be limited. If you are signed in, the report is linked to your account. Nothing is sent until you tap Send report. If you choose "Email instead", it goes from your own Mail app.</li>
+      <li><strong>Backup file (your choice).</strong> If you turn it on, PlateO writes a file (encrypted if you set a passphrase) to a folder you choose, such as iCloud Drive. It never comes to us.</li>
+    </ul>
+
+    <h2 id="phone-only">What never leaves your iPhone</h2>
+    <ul>
+      <li><strong>Voice (optional).</strong> If you use voice logging, speech is turned into text on your iPhone, using Apple's on-device speech models. Audio is held in memory for a few seconds and is never recorded, stored or sent anywhere. The text of what you said stays on your iPhone, apart from a bug report you choose to send.</li>
+      <li><strong>Whiteboard photos.</strong> If you photograph a gym whiteboard to fill in a workout, the writing is read on your iPhone. The photo is not saved or sent anywhere.</li>
+      <li><strong>Apple Health.</strong> If you allow it, PlateO reads workouts, active and resting energy, body weight, height, year of birth and sex, and (if you turn it on) food energy and macros. It can write workouts, active energy and body weight you log. PlateO never reads heart rate, routes, sleep or steps. Nothing read from Apple Health is uploaded to our server or used for advertising.</li>
+      <li>Injuries, how you feel today, recovery taps, and what PlateO learns about how you talk.</li>
+    </ul>
+
+    <h2 id="where">Where it is kept and who can see it</h2>
+    <ul>
+      <li>Your account and backup are held by Supabase, our database and sign-in provider, in a project in London, UK. Supabase handles it on our behalf and under our instructions. It is sent over encrypted (HTTPS) connections only.</li>
+      <li>Each account can only read and change its own rows. Other PlateO users cannot see your data. Friends and leagues are switched off in the beta.</li>
+      <li>The person who runs PlateO (Lee Praoline) can open the database and read bug reports in order to run the service and fix problems you report. We do not look at your training for any other purpose, and we never sell it, share it for advertising, or use it to profile you.</li>
+      <li>Apple handles Sign in with Apple, TestFlight and your Apple Health data under its own policies.</li>
+    </ul>
+
+    <h2 id="analytics">Analytics, ads and tracking</h2>
+    <p>None. PlateO has no analytics, no advertising, no tracking and no third-party software libraries. It does not use your data to track you across other apps or websites.</p>
+
+    <h2 id="keep">How long we keep it</h2>
+    <ul>
+      <li><strong>Account and backup:</strong> until you delete your account. We do not yet delete inactive accounts automatically. When you delete a workout or a weight, a bare "deleted" marker stays on the server so your other devices learn about it, until you delete your account.</li>
+      <li><strong>Bug reports:</strong> deleted after 180 days. A screenshot sent with a report is removed in the next clean-up. If you were signed in when you sent one, deleting your account deletes it too. Email us with the report number if you want one deleted sooner.</li>
+      <li><strong>Our host's own backups:</strong> may keep routine backups for up to 30 days after a deletion.</li>
+      <li><strong>On your iPhone:</strong> until you delete it or delete the app.</li>
+    </ul>
+
+    <h2 id="delete">Deleting and exporting your data</h2>
+    <ul>
+      <li><strong>Delete your account:</strong> You, then Account, then Delete my account. This removes your account and every row we hold for you straight away. You need to be online. You can choose to keep the copy on your iPhone or delete that too.</li>
+      <li><strong>Delete all my data:</strong> You, then Your data, then Delete all my data. If you are signed in, this deletes the server copy and your account as well as the data on your iPhone.</li>
+      <li><strong>Stop backing up:</strong> switch backup off in You, then Account. You choose whether to keep or delete your copy on our server.</li>
+      <li><strong>Export:</strong> You, then Your data, then Export everything gives you a file of your training that you can keep or share.</li>
+      <li>You can also ask us by email (see <a href="#contact">Who we are</a>) for a copy of what we hold, or for it to be corrected or deleted.</li>
+    </ul>
+
+    <h2 id="children">Children</h2>
+    <p>PlateO is for people aged 13 and over. Before you can sign in, PlateO asks for your year of birth. If it says you are under 13, PlateO stops there: it keeps nothing, offers no sign-in, and sends nothing to our server. This check relies on the year you enter. If you think a child under 13 has an account, email us and we will delete it.</p>
+
+    <h2 id="website">This website</h2>
+    <ul>
+      <li>No cookies, no analytics, no tracking pixels, no third-party scripts or fonts. So there's no cookie banner.</li>
+      <li>Like every website, the hosting provider (GitHub Pages) briefly keeps standard server logs, such as your IP address and browser type, to deliver the page and stop abuse. We don't use them to identify or profile you.</li>
+    </ul>
+
+        <h2 id="rights">Your rights</h2>
+    <p>Under UK data protection law you can ask to see, correct or delete what we hold about you, ask for a copy you can move elsewhere, or object to how we use it. Much of this you can do yourself in the app (see above). For the rest, email us and we'll reply within one month. For the account, we rely on needing your details to run the service you signed up to; for backup and health information, we rely on your separate agreement, which you can withdraw at any time.</p>
+    <p>If you're unhappy with how we've handled your data, you can complain to the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk/make-a-complaint/">ico.org.uk/make-a-complaint</a>, though we'd appreciate the chance to put it right first.</p>
+
+    <h2 id="contact">Who we are</h2>
+    <div class="box">
+      <p>PlateO is made by Lee Praoline, an individual in the UK, who is the data controller for the app and this website.</p>
+      <p>Contact: <a href="mailto:lpraoline@gmail.com">lpraoline@gmail.com</a></p>
+    </div>
+
+    <h2 id="changes">Changes</h2>
+    <p>If PlateO changes what it collects, for example when friends, leagues or other sign-in methods are switched on, this policy will change before they go live, and the date above will be updated.</p>
+
+    <p><a href="./">← Back to PlateO</a></p>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <p>© 2026 Lee Praoline. Made in the UK.</p>
+    </div>
+  </footer>
+</body>
+</html>
