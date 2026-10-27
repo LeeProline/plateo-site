@@ -171,14 +171,10 @@ h3 { font-size: 1.375rem; font-weight: 700; letter-spacing: -.01em; line-height:
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .fine { font-size: .9375rem; color: var(--ink-2); margin: 16px 0 0; }
 
-/* Phone mockup */
-.phone {
-  margin: 0 auto; width: min(300px, 78vw);
-  padding: 9px; border-radius: 52px; background: var(--bezel);
-  box-shadow: var(--shadow), inset 0 0 0 1.5px rgba(255, 255, 255, .08);
-}
-.phone img { width: 100%; border-radius: 43px; aspect-ratio: 600 / 1304; }
-@media (min-width: 900px) { .phone { width: 320px; } }
+/* Phone mockup: the image already carries its own bezel and shadow (900 x 1899, transparent), so it is shown big enough for the screen text to read. */
+.phone { margin: 0 auto; width: min(380px, 90vw); }
+.phone img { width: 100%; height: auto; aspect-ratio: 900 / 1899; border-radius: 0; }
+@media (min-width: 900px) { .phone { width: 440px; } }
 
 /* Sections */
 .section { padding: 72px 0; border-top: 1px solid var(--line); }
