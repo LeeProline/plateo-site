@@ -289,3 +289,23 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline-offs
   .btn { border: 2px solid ButtonText; }
   .brand svg { color: CanvasText; }
 }
+
+/* Exercise guide: clip and instruction card, one unit */
+.guide-unit { display: grid; gap: 20px; max-width: 980px; margin: 0 auto; }
+@media (min-width: 900px) { .guide-unit { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; } }
+.guide { margin: 0; }
+.guide-video { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; border-radius: 16px; background: var(--surface); object-fit: cover; }
+.guide-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+.guide-card h3 { margin: 0; font-size: 1.5rem; }
+.guide-card .target { margin: 4px 0 0; color: var(--ink-2); }
+.guide-card h4 { margin: 20px 0 8px; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
+.guide-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.guide-card ul.plain li { padding-left: 16px; position: relative; }
+.guide-card ul.plain li::before { content: ""; position: absolute; left: 2px; top: .65em; width: 5px; height: 5px; border-radius: 50%; background: var(--ink-2); }
+.guide-card ul.marked li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; }
+.mark { width: 20px; height: 20px; margin-top: .15em; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.mark.do circle { fill: var(--accent); stroke: none; } .mark.do path { stroke: var(--on-accent); }
+.mark.avoid circle { fill: var(--error); stroke: none; } .mark.avoid path { stroke: #fff; }
+.guide-card .tip { margin: 20px 0 0; padding-top: 16px; border-top: 1px solid var(--line); color: var(--ink-2); }
+.guide-note { margin: 14px 0 0; text-align: center; color: var(--ink-2); font-size: .95rem; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
