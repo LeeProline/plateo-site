@@ -203,6 +203,7 @@ h3 { font-size: 1.375rem; font-weight: 700; letter-spacing: -.01em; line-height:
 .closing { text-align: center; padding: 88px 0; }
 .closing p { color: var(--ink-2); max-width: 36rem; margin: 18px auto 0; }
 .closing .cta-row { justify-content: center; }
+.closing .follow-note { font-size: .9375rem; margin-top: 20px; }
 
 /* Footer */
 .site-foot { border-top: 1px solid var(--line); padding: 40px 0 48px; color: var(--ink-2); font-size: .9375rem; }
